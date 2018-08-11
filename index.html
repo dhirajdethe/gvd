@@ -5,15 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <script language="javascript">
-    alert('I am foo!');
-  var hin = document.getElementById('eng');
-  var hin = document.getElementById('a#hin');
-  var hin = document.getElementById('mar');
     
-  eng.onclick = showEnglish;
-  hin.onclick = showHindi;
-  mar.onclick = showMarathi;
-
  function showEnglish() {
   document.getElementById("englishText").style.display = "inline";
   document.getElementById("hindiText").style.display = "none";
@@ -21,7 +13,6 @@
 }
     
 function showHindi() {
-  alert("hi");
   document.getElementById("englishText").style.display = "none";
   document.getElementById("hindiText").style.display = "inline";
   document.getElementById("marathiText").style.display = "none";
@@ -41,7 +32,10 @@ function showHindi() {
 <div class="header">
 <h2>Girish Dalvi</h2>
   <a href="#" title="English" id="eng">English</a> <a href="#" title="Hindi" id="hin">हिन्दी</a> <a href="#" title="Marathi" id="mar">मराठी</a>
-<button onclick="showHindi()">Hindi button</button>
+<button onclick="showEnglish()">English</button>
+<button onclick="showHindi()">Hindi</button>
+<button onclick="showMarathi()">Marathi</button>
+
 <ul>
   <li class="active">Home</li>
   <li> Areas of Study & Research</li>
