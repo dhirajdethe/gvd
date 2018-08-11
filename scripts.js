@@ -1,17 +1,18 @@
- function showEnglish() {
-  document.getElementById("englishText").style.display = "block";
-  document.getElementById("hindiText").style.display = "none";
-  document.getElementById("marathiText").style.display = "none";
-}
-    
-function showHindi() {
-  document.getElementById("englishText").style.display = "none";
-  document.getElementById("hindiText").style.display = "block";
-  document.getElementById("marathiText").style.display = "none";
-}
+var acc = document.getElementsByClassName("accordion");
+var i;
 
- function showMarathi() {
-  document.getElementById("englishText").style.display = "none";
-  document.getElementById("hindiText").style.display = "none";
-  document.getElementById("marathiText").style.display = "block";
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
 }
