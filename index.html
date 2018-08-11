@@ -2,12 +2,37 @@
 <head>
 <title>Girish Dalvi</title>
 <link rel="stylesheet" type="text/css" href="style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
 </head>
 <body>
+  <script type="text/javascript" language="javascript">
+ function showEnglish() {
+  document.getElementById("englishText").style.display = "block";
+  document.getElementById("hindiText").style.display = "none";
+  document.getElementById("marathiText").style.display = "none";
+}
+    
+function showHindi() {
+  document.getElementById("englishText").style.display = "none";
+  document.getElementById("hindiText").style.display = "block";
+  document.getElementById("marathiText").style.display = "none";
+}
+
+ function showMarathi() {
+  document.getElementById("englishText").style.display = "none";
+  document.getElementById("hindiText").style.display = "none";
+  document.getElementById("marathiText").style.display = "block";
+}
+  </script>
 
 <div class="header">
 <h2>Girish Dalvi</h2>
+<button onclick="showEnglish()">English</button>
+<button onclick="showHindi()">Hindi</button>
+<button onclick="showMarathi()">Marathi</button>
+
 <ul>
   <li class="active">Home</li>
   <li> Areas of Study & Research</li>
@@ -19,6 +44,7 @@
 </div>
 
 <div class="text-container">
+  <div id="englishText">
 <p>Girish Dalvi is an inter-disciplinary faculty of Design at the Industrial Design Centre (IDC), IIT Bombay. He teaches subjects in the area of Visual Design, Interaction Design and Design research.
 
 <p>His research interests in the domain of Visual design are: Devanagari Typography (History, Type design methodologies, Theoretical Modeling, Classification, and Type-Culture); within the field of Interaction design his research interests are: Culture sensitive Interactions, Frugal Computing, search-retrieval paradigms, Indian Language (localized) interfaces and input mechanisms for Indic scripts. As a design researcher his work deals with applying Statistical and Mathematical modeling techniques for designers.
@@ -26,6 +52,10 @@
 <p>He holds a Bachelor’s degree in Computer Engineering, a Master’s degree in Design and a Ph.D. from IIT Bombay. His doctoral research dealt with the theoretical modeling of Devanagari typefaces. As a type designer he has co-created several typefaces for Indian scripts, prominent amongst these is the Ek multi-script family, the open source Ek Mukta family , LifeOk Devanagari and Star Bengali.
 
 <p>Please feel free to get in touch with him by writing at girish.dalvi@iitb.ac.in
+  
+  </div>
+  
+    <div id="hindiText">
 
 <p>गिरीश दळवी, भारतीय प्रौद्योगिकी संस्थान (आय॰ आय॰ टी॰) मुंबई के औद्योगिक अभिकल्प केन्द्र (आय॰ डी॰ सी॰) में अभिकल्प इस विषय के साहाय्यक प्राध्यापक है। वह दृक् संचार, अन्योन्यक्रिया अभिकल्प और अभिकल्प संशोधन जैसे विषयों का अध्यापन करते है। उनके संशोधन के विषय है —
 
@@ -34,6 +64,10 @@
 <p>उन्होंने संगणक-अभियांत्रिकी इस विषय में स्नातक पदवी, अभिकल्प इस विषय में स्नातकोत्तर पदवी, तथा आय. आय. टी., मुंबई से विद्या वाचस्पति (पीएचडी) यह पदवी प्राप्त की है। उनके प्रबंध का विषय ‘देवनागरी मुद्राक्षरों का सैद्धान्तिक प्रारूपण’ था। ‘एक’ (बहु लिपि फाउंटसमूह), ‘एक मुक्त’ यह मुक्तस्रोत फाउंटसमूह ,‘लाइफओके’ (देवनागरी फाउंट) और ‘स्टार बंगाली’ (बाङ्ला फाउंट) जैसा विविध फाउंट प्रकल्पों में वह सह-रचनाकर रह चुके हैं।
 
 <p>संपर्क के लिए girish.dalvi@iitb.ac.in इस पते पर बेझिझक लिखें।
+    
+    </div>
+
+  <div id="marathiText">
 
 <p>गिरीश दळवी हे भारतीय प्रौद्योगिकी संस्थान (आय॰ आय॰ टी॰) मुंबई येथील औद्योगिक अभिकल्प केन्द्रात (आय॰ डी॰ सी॰) अभिकल्प ह्या विषयाचे साहाय्यक प्राध्यापक म्हणून कार्यरत असून ते दृक् संचार, अन्योन्यक्रिया अभिकल्प आणि अभिकल्प संशोधन ह्या विषयांचे अध्यापन करतात. त्यांचे संशोधनाचे विषय पुढीलप्रमाणे आहेत.
 
@@ -43,6 +77,30 @@
 
 <p>संपर्क साधायला girish.dalvi@iitb.ac.in या पत्त्यावर निःसंकोच पत्र पाठवावे.
 
+  </div>
+
+<ul>
+<li>Devanagari Typography
+<li>History of Type Design in India
+<li>Type Design Methodologies
+<li>Type & Culture
+<li>Culture sensitive Interaction Design
+<li>Indian Language Interfaces
+<li>Statistical Methods for Designers
+<li>Input Mechanisms for Indic scripts
+</ul>
+ 
+<ul>
+<li><b>DE 106</b> - Typography Fundamentals and Exploratory Printing
+<li><b>DE 631</b> - Introduction to Typography
+<li><b>DE 633</b> - Colour, Composition and Layout
+<li><b>DE 707</b> - Design Research Methodologies
+<li><b>DE 803</b> - Quantitative Design Research Methods
+<li><b>DE 131</b> - Design and Human Evolution
+<li><b>DE 201</b> - 2D Visual Studies I - Word and Image
+<li><b>DEP 301</b> - Collaborative Design Project  
+  </ul>
+  
 </div>
 </body>
 </html>
