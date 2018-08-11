@@ -40,8 +40,9 @@ display: none;
 }
 
 .languages{
-  width: 800px;
-  align-items: flex-end;
+  width: auto;
+  right: 0;
+  position: absolute;
 }
 
 .navigation{
@@ -64,7 +65,7 @@ display: none;
   border-bottom: 2px solid #555;
 }
 
-.active{
+.active-element{
   border-bottom: 2px solid #000;
   color: #2a3b48;
 }
@@ -85,7 +86,6 @@ display: none;
   background-color: #f5faff;
   border-radius: 0px 0px 8px 8px;
   padding: 0 24px 0px 48px;
-  color: #6D768E;
   margin-top: -2px;
   max-height: 0;
   overflow: hidden;
@@ -108,7 +108,6 @@ display: none;
 
 .accordion:hover{
   background-color: #f5faff;
-  color: #1E2638;
 }
 
 .active {
@@ -128,4 +127,30 @@ display: none;
     content: "\2212";
     margin-right: 10px;
     margin-left: -26px;
+}
+
+@media only screen and (max-width: 880px) {
+
+  .text-container{
+    width: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .header{
+    padding-top: 40px;
+    line-height: 1em;
+    width: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+    .accordion{
+      width: inherit;
+      margin: 10px 10px 0px 10px;
+    }
+
+    .panel{
+      width: inherit;
+      margin: -4px 10px 4px 10px;
+    }
 }
